@@ -1,0 +1,14 @@
+.gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px 20px;
+    width: 90%;
+    margin-inline: auto;
+    margin-top: 1.5rem;
+}
+
+@media (width <= 480px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+}
