@@ -44,12 +44,12 @@ export default function GalleryContainer() {
 
   return (
     <div className="gallery-container">
-      {galleryContent.map((g, index) => (
+      {galleryContent.map((gallery, index) => (
         <CardImage
           key={index}
-          source={g.imageURL}
-          caption={g.caption}
-          addedToFavourite={g.isAddedToFavourite}
+          source={gallery.imageURL}
+          caption={gallery.caption}
+          addedToFavourite={gallery.isAddedToFavourite}
         />
       ))}
     </div>

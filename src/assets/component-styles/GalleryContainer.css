@@ -1,14 +1,26 @@
 .gallery-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px 20px;
-    width: 90%;
-    margin-inline: auto;
-    margin-top: 1.5rem;
+    width: 95%;
+    margin: 1rem auto;
 }
 
 @media (width <= 480px) {
     .gallery-container {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (width >= 481px) and (width <= 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width >= 1400px) {
+    .gallery-container {
+        width: 85%;
+        gap: 1.5rem;
     }
 }

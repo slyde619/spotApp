@@ -1,20 +1,19 @@
 .card-image {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    img {
-        width: 413px;
-        height: 413px;
-        border-radius: 8px;
-    }
-
-    
-    div {
-            display: flex;
-            justify-items: space-between;
-            align-items: center;
-            width: 100%;
-            padding: 0.25rem 0.5rem;
-        }
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  img {
+    width: 512px;
+    height: 413px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
 }
 
+.card-image-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem;
+}
